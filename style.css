@@ -11,6 +11,13 @@
 
 }
 
+.container-tabela-resultado,
+.container-historia-explicacao {
+    
+    transition: opacity .5s;
+
+}
+
 .container-tabela-resultado {
 
     position: fixed;
@@ -21,6 +28,10 @@
     display: grid;
     place-items: center;
 
+}
+
+.invisivel {
+    display: none;
 }
 
 .wrapper-tabela-resultado {
@@ -95,4 +106,54 @@
     padding: 5px;
 
 
+}
+
+/* HISTÓRIA */
+[data-conceito-historia] {
+
+    font-weight: bold;
+    text-transform: uppercase;
+
+}
+
+.container-historia-explicacao {
+
+    max-width: 700px;
+    margin: 0 auto;
+    font-size: 1.2rem;
+
+
+}
+
+
+/* VIEW TRANSITION API */
+
+[data-conceito-historia="despesas"],
+[data-conceito-tabela="despesas"] {
+
+    view-transition-name: despesa;
+
+}
+
+[data-conceito-historia="receitas"],
+[data-conceito-tabela="receitas"] {
+
+    view-transition-name: receita;
+
+}
+
+::view-transition-group(receita),
+::view-transition-group(despesa),
+::view-transition-group(resultad) {
+  animation-duration: 2s;
+  animation-timing-function: ease-in-out;
+}
+
+::view-transition-old(root) {
+  animation-duration: 500ms;
+}
+
+::view-transition-new(root) {
+  animation-duration: 3s;
+  animation-delay: 500ms;
 }

@@ -22,13 +22,13 @@
 
                 <div class="linha-tabela-resultado" data-linha="receitas">
                     <span class="index-linha-tabela-resultado">1.</span>
-                    <span class="conceito-linha-tabela-resultado">Receitas</span>
+                    <span class="conceito-linha-tabela-resultado" data-conceito-tabela="receitas">Receitas</span>
                     <span class="valor-linha-tabela-resultado" data-valor-linha-tabela="receitas">xxxx</span>
                 </div>
 
                 <div class="linha-tabela-resultado" data-linha="despesas">
                     <span class="index-linha-tabela-resultado">2.</span>
-                    <span class="conceito-linha-tabela-resultado">Despesas</span>
+                    <span class="conceito-linha-tabela-resultado" data-conceito-tabela="despesas">Despesas</span>
                     <span class="valor-linha-tabela-resultado" data-valor-linha-tabela="despesas">xxxx</span>
                 </div>    
 
@@ -66,15 +66,60 @@
                 </div>         
                 
                 <div class="wrapper-botoes-landing">
-                    <button><span>🛟</span><span>Socorro, não entendi nada</span></button>
-                    <button><span>😎</span><span>Quero mais detalhes</span></button>
+                    <button class="btn-explicacao"><span>🛟</span><span>Socorro, não entendi nada</span></button>
+                    <button class="btn-detalhes"><span>😎</span><span>Quero mais detalhes</span></button>
                 </div>
 
             </div>
 
-        </div>            
+        </div>   
+        
+        <div class="container-historia-explicacao invisivel">
+
+            <p>Para que existem os governos? Já parou para pensar?</p>
+
+            <p>Filosofia à parte (mas nem tanto), a nossa Constituição define os seguintes objetivos para a nossa República:</p>
+
+            <ol>
+                <li>construir uma sociedade livre, justa e solidária;</li>
+                <li>garantir o desenvolvimento nacional;</li>
+                <li>erradicar a pobreza e a marginalização e reduzir as desigualdades sociais e regionais;</li>
+                <li>promover o bem de todos, sem preconceitos de origem, raça, sexo, cor, idade e quaisquer outras formas de discriminação.</li>
+            </ol>
+
+            <p>
+                Mas como se faz isso na prática?
+            </p>
+
+            <p>
+                Com Políticas Públicas.
+            </p>
+
+            <p>
+                Mas como se faz isso na prática, DE VERDADE?
+            </p>
+
+            <p>
+                Com <span data-conceito-historia="despesas">Despesas</span> Públicas. São gastos com pessoal, materiais, deslocamentos, serviços, contratações, construções etc.
+            </p>
+
+            <p>
+                Mas de onde vem o dinheiro para pagar esses gastos?
+            </p>
+
+            <p>
+                O dinheiro vem das <span data-conceito-historia="receitas">Receitas</span> Públicas, um dinheiro que é pago pelas pessoas, famílias, empresas, por meio de impostos, taxas, contribuições, multas etc.
+            </p>
+
+            <p>
+
+            </p>
+
+        </div>
 
     </main>
+
+    <script src="script.js"></script>
     
 </body>
 </html>
