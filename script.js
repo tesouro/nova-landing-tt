@@ -1,20 +1,24 @@
 // elementos
 
 const botao_ajuda = document.querySelector(".btn-explicacao");
+const botao_tabela = document.querySelector(".btn-tabela");
 const tabela = document.querySelector(".container-tabela-resultado");
 const historia_explicacao = document.querySelector(".container-historia-explicacao");
 
 
-botao_ajuda.addEventListener("click", e => {
+botao_ajuda.addEventListener("click", view_transition);
+botao_tabela.addEventListener("click", view_transition);
 
-    document.startViewTransition(() => mostra_historia());
+function view_transition() {
 
-})
+    document.startViewTransition(() => alterna_historia_tabela());
 
-function mostra_historia() {
+}
 
-    tabela.classList.add("invisivel");
-    historia_explicacao.classList.remove("invisivel");
+function alterna_historia_tabela() {
+
+    tabela.classList.toggle("invisivel");
+    historia_explicacao.classList.toggle("invisivel");
 
 }
 
