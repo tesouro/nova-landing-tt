@@ -1,0 +1,98 @@
+* {
+    box-sizing: border-box;
+}
+
+:root {
+
+}
+
+.logo {
+    display: block;
+
+}
+
+.container-tabela-resultado {
+
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    display: grid;
+    place-items: center;
+
+}
+
+.wrapper-tabela-resultado {
+
+    width: 700px;
+    font-size: 2rem;
+
+}
+
+.data-atualizacao {
+
+    font-size: .3em;
+    letter-spacing: 1px;
+    text-align: right;
+    margin-bottom: 2rem;;
+
+}
+
+.linha-tabela-resultado {
+
+    margin-top: .5em;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    gap: .5em;
+
+}
+
+[data-linha="resultado primario"],
+[data-linha="resultado nominal"],
+[data-linha="necessidade de financiamento"] {
+
+    margin-top: .25em;
+    padding-top: .25em;
+    border-top: 1px solid black;
+    font-weight: bold;
+
+}
+
+.valor-linha-tabela-resultado {
+
+    margin-left: auto;
+
+}
+
+.divisor-linha-tabela-resultado {
+
+    margin-top: .5em;
+    border-bottom: 2px solid black;
+
+}
+
+.wrapper-botoes-landing {
+
+    display: flex;
+    justify-content: center;
+    margin-top: 3rem;
+    gap: 3rem;
+
+}
+
+.wrapper-botoes-landing button {
+
+    width: 150px;
+    background-color: cornsilk;
+    font-family: inherit;
+    font-size: 1.25rem;
+    display: flex;
+    flex-direction: column;
+    gap: .5rem;
+    border-radius: 5px;
+    padding: 5px;
+
+
+}
