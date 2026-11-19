@@ -1,3 +1,5 @@
+/* escrito por humano */
+
 * {
     box-sizing: border-box;
 }
@@ -41,13 +43,17 @@
 
 }
 
-.data-atualizacao {
+.data-atualizacao,
+.moeda {
 
     font-size: .3em;
     letter-spacing: 1px;
     text-align: right;
-    margin-bottom: 2rem;;
 
+}
+
+.moeda {
+    margin-bottom: 2rem;
 }
 
 .linha-tabela-resultado {
@@ -126,7 +132,7 @@
 }
 
 
-/* VIEW TRANSITION API */
+/* Coisas para a view transition */
 
 [data-conceito-historia="despesas"],
 [data-conceito-tabela="despesas"] {
@@ -142,11 +148,53 @@
 
 }
 
+[data-conceito-historia="resultado primario"],
+[data-conceito-tabela="resultado primario"] {
+
+    view-transition-name: resultado_primario;
+
+}
+
+[data-conceito-historia="juros"],
+[data-conceito-tabela="juros"] {
+
+    view-transition-name: juros;
+
+}
+
+[data-conceito-historia="resultado nominal"],
+[data-conceito-tabela="resultado nominal"] {
+
+    view-transition-name: resultado_nominal;
+
+}
+
+[data-conceito-historia="vencimentos"],
+[data-conceito-tabela="vencimentos"] {
+
+    view-transition-name: vencimentos;
+
+}
+
+[data-conceito-historia="necessidade de financiamento"],
+[data-conceito-tabela="necessidade de financiamento"] {
+
+    view-transition-name: necessidade_financiamento;
+
+}
+
+
 ::view-transition-group(receita),
 ::view-transition-group(despesa),
-::view-transition-group(resultad) {
+::view-transition-group(resultado_primario),
+::view-transition-group(juros),
+::view-transition-group(resultado_nominal),
+::view-transition-group(vencimentos),
+::view-transition-group(necessidade_financiamento) {
+
   animation-duration: 2s;
   animation-timing-function: ease-in-out;
+
 }
 
 ::view-transition-old(root) {
