@@ -33,7 +33,11 @@ function view_transition2() {
 
 function alterna_tabela_detalhes() {
 
+    if (esquema_detalhes.classList.contains("invisivel")) {
+        animate(0);
+    }
     tabela.classList.toggle("invisivel");
     esquema_detalhes.classList.toggle("invisivel");
+
 
 }

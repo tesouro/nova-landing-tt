@@ -141,6 +141,15 @@ div.container-esquema-detalhes {
 
 }
 
+canvas {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: -1;
+}
+
 
 /* Coisas para a view transition */
 
