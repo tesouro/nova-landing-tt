@@ -131,6 +131,16 @@
 
 }
 
+/* ESQUEMA DETALHES */
+
+div.container-esquema-detalhes {
+
+    margin: 0 auto;
+    width: 700px;
+    font-size: 2rem;
+
+}
+
 
 /* Coisas para a view transition */
 
